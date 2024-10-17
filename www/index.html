@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Email Signature Generator</h1>
+    <form id="signature-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="job-title">Job Title:</label>
+        <input type="text" id="job-title" name="job-title" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="company-logo">Company Logo:</label>
+        <input type="file" id="company-logo" name="company-logo" accept="image/*"><br><br>
+
+        <label for="font">Font:</label>
+        <select id="font" name="font">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Palatino">Palatino</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Bookman">Bookman</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Impact">Impact</option>
+        </select><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="font-size">Font Size:</label>
+        <input type="number" id="font-size" name="font-size" min="1" max="100" value="14"><br><br>
+
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Gujarati">Gujarati</option>
+        </select><br><br>
+
+        <label for="file-placement">File Placement:</label>
+        <select id="file-placement" name="file-placement">
+            <option value="above">Above</option>
+            <option value="below">Below</option>
+        </select><br><br>
+
+        <button type="button" id="copy-button">Copy</button>
+
+        <button type="submit">Generate Signature</button>
+    </form>
+
+    <h2>Signature Preview:</h2>
+    <div id="signature-preview"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
